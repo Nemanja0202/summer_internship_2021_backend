@@ -9,11 +9,11 @@ Response:
 ```JSON
 [
    {
-      "id": Int,
-      "air_quality": Float,
-      "temperature": Float,
-      "humidity": Float,
-      "time_stamp": DateTime
+      "id": "Int",
+      "air_quality": "Float",
+      "temperature": "Float",
+      "humidity": "Float",
+      "time_stamp": "DateTime"
    }
 ]
 ```
@@ -22,30 +22,30 @@ POST /measurements
 Post Request:
 ```JSON
 {
-   "air_quality": Float,
-   "temperature": Float,
-   "humidity": Float
+   "air_quality": "Float",
+   "temperature": "Float",
+   "humidity": "Float"
 }
 ```
 
 Response:
 ```JSON
 {
-   "id": Int,
-   "air_quality": Float,
-   "temperature": Float,
-   "humidity": Float,
-   "time_stamp": DateTime
+   "id": "Int",
+   "air_quality": "Float",
+   "temperature": "Float",
+   "humidity": "Float",
+   "time_stamp": "DateTime"
 }
 ```
 
 GET /measurements/<int: id>
 ```JSON
 {
-   "id": Int,
-   "air_quality": Float,
-   "temperature": Float,
-   "humidity": Float,
-   "time_stamp": DateTime
+   "id": "Int",
+   "air_quality": "Float",
+   "temperature": "Float",
+   "humidity": "Float",
+   "time_stamp": "DateTime"
 }
 ```
