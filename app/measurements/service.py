@@ -16,6 +16,12 @@ class MeasurementService:
         return measurements.all()
 
     @staticmethod
+    def get_latest():
+        return db.session.query(Measurement).\
+            order_by(Measurement.id.desc()).\
+            first()
+
+    @staticmethod
     def create(post_data):
         measurement = Measurement(air_quality=post_data['air_quality'],
                                   temperature=post_data['temperature'],

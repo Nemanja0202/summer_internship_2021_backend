@@ -21,6 +21,14 @@ class MeasurementsApi(Resource):
         return MeasurementResponseSchema().dump(measurement)
 
 
+@measurement_api.route('/latest')
+class MeasurementApi(Resource):
+    def get(self):
+        measurement = MeasurementService().get_latest()
+
+        return MeasurementResponseSchema().dump(measurement)
+
+
 @measurement_api.route('/<int:id>')
 class MeasurementApi(Resource):
     def get(self, id):
