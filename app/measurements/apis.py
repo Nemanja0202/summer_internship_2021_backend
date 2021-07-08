@@ -1,9 +1,7 @@
 from flask import request
 
-from app import db
 from flask_restx import Resource
 from app.measurements import measurement_api
-from app.measurements.models import Measurement
 from app.measurements.schemas import MeasurementResponseSchema, \
     MeasureentRequestSchema
 from app.measurements.service import MeasurementService
