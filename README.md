@@ -22,7 +22,7 @@ Response:
 [
    {
       "id": "Int",
-      "air_quality": "Float",
+      "pollution": "Float",
       "temperature": "Float",
       "humidity": "Float",
       "time_stamp": "DateTime"
@@ -34,7 +34,7 @@ POST /api/measurements
 Post Request:
 ```JSON
 {
-   "air_quality": "Float",
+   "pollution": "Float",
    "temperature": "Float",
    "humidity": "Float"
 }
@@ -44,7 +44,7 @@ Response:
 ```JSON
 {
    "id": "Int",
-   "air_quality": "Float",
+   "pollution": "Float",
    "temperature": "Float",
    "humidity": "Float",
    "time_stamp": "DateTime"
@@ -56,7 +56,7 @@ Response:
 ```JSON
 {
   "id": "Int",
-  "air_quality": "Float",
+  "pollution": "Float",
   "temperature": "Float",
   "humidity": "Float",
   "time_stamp": "DateTime"
@@ -66,7 +66,7 @@ GET /api/measurements/<int: id>
 ```JSON
 {
    "id": "Int",
-   "air_quality": "Float",
+   "pollution": "Float",
    "temperature": "Float",
    "humidity": "Float",
    "time_stamp": "DateTime"
