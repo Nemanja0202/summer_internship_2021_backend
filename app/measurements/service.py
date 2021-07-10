@@ -23,7 +23,7 @@ class MeasurementService:
 
     @staticmethod
     def create(post_data):
-        measurement = Measurement(air_quality=post_data['air_quality'],
+        measurement = Measurement(pollution=post_data['pollution'],
                                   temperature=post_data['temperature'],
                                   humidity=post_data['humidity'])
         db.session.add(measurement)
